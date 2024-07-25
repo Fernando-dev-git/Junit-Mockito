@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class ExamTest {
 
 	public static void main(String[] args) {
-		ArrayList lst = new ArrayList();
-		String[] mr;
+		ArrayList<String> lst = new ArrayList<String>();
 		try {
 			while (true) {
 				lst.add(new String("cad"));

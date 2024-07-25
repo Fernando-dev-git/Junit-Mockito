@@ -34,8 +34,8 @@ public final class Issue {
 	public void close() {
 		this.status = Status.CLOSED;
 		this.closedDate = LocalDateTime.now(clock);
-		Email email = Email.builder().
-				receiver(reporter.getEmail())
+		Email email = Email.builder()
+				.receiver(reporter.getEmail())
 				.subject(title + " - cerrada")
 				.build();
 		emailSender.send(email);
